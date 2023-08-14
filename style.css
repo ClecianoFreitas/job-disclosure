@@ -1,0 +1,127 @@
+*, *:before, *:after{ /*REGRA PARA ALTERAR O BOX MODEL PADRÃO*/
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.clear{ /*CLASSE PARA LIMPAR ELEMENTOS FLUTUADOS*/
+    clear: both;    
+}
+
+body{
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #ccc; /*cor de fundo cinza*/
+}
+
+#tudo{ 
+    /*CENTRALIZA A PÁGINA DE 960PX DE LARGURA */
+    /* width: 960px; */
+    width: 100%;
+    max-width: 1200px;
+    min-width: 760px;
+    margin: 0 auto;
+    background-color: #fff; /*cor de fundo branca*/
+}
+
+h1, h2, h3, h4, h5, h6 {color: #036;}
+
+.topo_header  {
+	background: #036; /*cor de fundo azul para o topo */
+	padding: 5px 20px;
+}
+
+.topo_header h1{
+    font-size: 36px;
+    text-align: right;
+    margin: 4px 0 2px 0;
+}
+
+.topo_header a{
+    /* color: #900; */
+    color: #fff;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none; /*Retira o sublinhado do link*/
+}
+
+.auxiliar_navegacao h2{
+    text-align: center; /*CONCENTRA O TÍTULO DO MENU*/
+}
+
+.auxiliar_navegacao a{  /*MODIFICA OS LINKS DO LADO ESQUERDO*/
+    background-color: #ff6e19;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    line-height: 2;
+    padding-left: 10px;
+    text-transform: capitalize; /*TRANSFORMA A PRIMEIRA LETRA MAIÚSCULA*/
+}
+
+.auxiliar_navegacao a:hover{  /*MODIFICA A COR DO TEXTO QUANDO O MOUSE PASSA EM CIMA*/
+    background-color: #036;
+}
+
+.auxiliar_parceiros_texto{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.auxiliar_parceiros_texto li{
+    margin-bottom: 3px;
+    background-color: #eee;
+}
+
+.auxiliar_parceiros_texto a{
+    padding: 8px;
+    color: #333;
+    display: block;
+
+}
+
+ul {
+    list-style: none; /*RETIRA DOS PONTOS DA LISTA*/
+    padding: 0;
+    margin: 0;
+
+}
+
+.topo_header h2{
+    font-size: 20px;
+    text-align: right;
+    margin: 2px 0 4px 0;
+    background-color: #036;
+    color: #fff;
+}
+
+.principal{  /*FLUTUA A DIREITA*/
+    /* width: 720px; */
+    width: 80%;
+    float: right;
+    padding-right: 15px;
+}
+
+.auxiliar{ /*FLUTUA A ESQUERDA*/
+    /* width: 220px; */
+    width: 18.3333%;
+    float: left;
+    padding-left: 15px;
+}
+
+.rodape{ /* LIMPA AS COLUNAS FLUTUADAS E DEFINE A LTURA DO RODAPE*/
+    clear: both;
+    /* height: 20px; */
+    background-color: #036;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+@media (max-width: 370px) {
+    
+}
